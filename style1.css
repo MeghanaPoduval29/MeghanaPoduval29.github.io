@@ -1,0 +1,419 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;  /* Enables smooth scrolling */
+}
+
+
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Section Styles */
+section {
+    min-height: 100vh;  /* Makes each section fill the viewport */
+    padding: 100px 20px;  /* Top padding to account for the fixed navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 0; /* Remove default margins */
+}
+
+#home {
+    background-color: #f5f5f5;
+    
+    
+}
+
+#about {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+
+
+#projects {
+    background-color: #d0d0d0;
+}
+
+
+#projects {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Tabs Styling */
+.tabs {
+    margin-bottom: 30px;
+    
+}
+
+.tab-button {
+    background-color: black;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.tab-button.active {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+/* Grid Display for Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card h2 {
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+
+
+#contact {
+    background-color: #c0c0c0;
+}
+
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    transition: transform 0.3s ease;
+}
+
+.about-item p{
+    font-style: italic;
+}
+
+/* General Section Styling */
+#experience {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#experience h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Experience Container */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Individual Experience Item Styling */
+.experience-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.experience-item h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+}
+
+.experience-item h3 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #666;
+}
+
+.experience-item p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Add a hover effect */
+.experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+#education {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.education-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.education-table th, .education-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.education-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    color: black;
+  }
+  
+  .title {
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-github
+  {
+    background:black;
+    color: white;
+  }
+
+  /* Certifications Section Styles */
+#certifications {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#certifications h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Grid Layout for Certifications */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Certification Card */
+.certification-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.certification-card h2 {
+    font-size: 1.6em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.certification-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Skills Cards Section */
+#skills-cards {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#skills-cards h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.skill-card h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Add hover effect */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
